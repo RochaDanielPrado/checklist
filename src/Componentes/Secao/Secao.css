@@ -1,0 +1,32 @@
+.secao {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    
+}
+
+.secao .a {
+    /* transform: rotate(-90deg); */
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    width: 10%;
+    background-color: #EEE748;
+    
+}
+
+.secao .tabela {
+    font-size: 12px;
+    width: 90%;
+    background-color: #FCFBE8;
+}
+
+.secao .tabela .b {
+    text-align: center;
+    background-color: #F5F291;
+}
+
+.responsavel {
+    margin: 0 10px ;
+}
+

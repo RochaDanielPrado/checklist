@@ -1,0 +1,13 @@
+.titulo {
+    display: block;
+    align-content: center;
+    background-color: #A74F2B;
+    margin: 10px;
+}
+
+.titulo h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+

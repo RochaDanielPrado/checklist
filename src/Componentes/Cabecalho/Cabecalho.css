@@ -1,0 +1,19 @@
+.cabecalho {
+    display: flex;
+    flex-flow: column wrap;
+    height:60px;
+    align-content: space-between;
+    
+    margin: 10px;
+}
+
+.cabecalho h1 {
+    color: #A74F2B;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.cabecalho img {
+    max-height: 55px;
+
+}
