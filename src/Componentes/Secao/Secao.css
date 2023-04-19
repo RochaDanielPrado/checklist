@@ -27,10 +27,15 @@
 }
 
 .secao .tabela .d {
-    height: 30px ;
-    width: 10px;
     background-color: #F5F291;
+    width: 10px;
 }
+
+.secao .tabela td {
+    height: 40px ;
+}
+
+
 
 .secao .tabela .b {
     text-align: center;
