@@ -12,7 +12,7 @@ const Secao = () => {
                         <tr>
                             <th className='b'></th>
                             <th>Ponto de checagem</th>
-                            <th className='b'></th>
+                            <th className='d'></th>
                             <th>Ponto de checagem</th>
                         </tr>
                     </thead>
@@ -20,66 +20,66 @@ const Secao = () => {
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
 
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
 
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
 
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
 
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
                         <tr>
                             <td className='b'><input type="checkbox" /></td>
                             <td>Ponto de checagem</td>
-                            <td className='b'><input type="checkbox" /></td>
-                            <td>Responsável:</td>
+                            <td className='b'></td>
+                            <td>Observação</td>
                         </tr>
                     </tbody>
 

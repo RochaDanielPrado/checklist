@@ -19,10 +19,22 @@
     font-size: 12px;
     width: 90%;
     background-color: #FCFBE8;
+    
+}
+
+.secao .tabela th {
+    text-align: start;
+}
+
+.secao .tabela .d {
+    height: 30px ;
+    width: 10px;
+    background-color: #F5F291;
 }
 
 .secao .tabela .b {
     text-align: center;
+    font-size: 18px;
     background-color: #F5F291;
 }
 
