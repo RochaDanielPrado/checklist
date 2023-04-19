@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-start;
     margin: 10px;
+
     
 }
 
@@ -11,14 +12,15 @@
     text-orientation: upright;
     text-align: center;
     width: 10%;
-    background-color: #EEE748;
+    padding: 5px 0 5px 0;
+    /* background-color: #EEE748; */
     
 }
 
 .secao .tabela {
     font-size: 12px;
     width: 90%;
-    background-color: #FCFBE8;
+    /* background-color: #FCFBE8; */
     
 }
 
@@ -26,24 +28,40 @@
     text-align: start;
 }
 
+.secao .tabela .b {
+    text-align: center;
+    font-size: 18px;
+    width: 10%;
+    /* background-color: #F5F291; */
+}
+
+.secao .tabela .c {
+    /* background-color: #F5F291; */
+    width: 45%;
+}
+
 .secao .tabela .d {
-    background-color: #F5F291;
-    width: 10px;
+    /* background-color: #F5F291; */
+    width: 1%;
+}
+
+.secao .tabela .e {
+    /* background-color: #F5F291; */
+    
 }
 
 .secao .tabela td {
     height: 40px ;
 }
 
-
-
-.secao .tabela .b {
-    text-align: center;
-    font-size: 18px;
-    background-color: #F5F291;
+.responsavel {
+    display: flex;
+    justify-content:start;
+    margin: 0 10px 0 10px ;
+    padding: 2px 0 2px 10px ;
 }
 
-.responsavel {
-    margin: 0 10px ;
+.tabela .inputobs {
+    border: none;
 }
 
