@@ -1,13 +1,13 @@
-import React, { ReactElement } from 'react';
 import './Botao.css';
-import { montarJson } from '../../Controllers/MonarJson';
 
-const Botao = ({ click }) => {
+const Botao = ({ click, texto }) => {
 
     return (
-        <button className='botao' onClick={click}>
-            teste
-        </button>
+        <div className='btn'>
+            <button className='botao' onClick={click}>
+                {texto}
+            </button>
+        </div>
     )
 }
 

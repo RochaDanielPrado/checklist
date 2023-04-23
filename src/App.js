@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import Cabecalho from './Componentes/Cabecalho';
 import Identificacao from './Componentes/Identificacao';
 import Secao from './Componentes/Secao';
 import Titulo from './Componentes/Titulo';
 import Botao from './Componentes/Botao';
-import { montarJson } from './Controllers/MonarJson';
+import { montarJson } from './Controllers/MontarJson';
 
 
 function App() {
@@ -109,7 +108,6 @@ function App() {
       <Identificacao
         modelo={modelos}
         sn={numSerie.filter(num => num.free === true)} />
-      <Botao click={montarJson} />
       <Titulo />
       {pontosChecagem.map((ponto, index) =>
         <Secao key={index}
@@ -120,6 +118,7 @@ function App() {
           cor03={ponto.bdSecao.cor03}
           topicos={ponto.bdTopicos}
           responsavel={responsavel.filter(resp => resp.ativo === true)} />)}
+      <Botao click={montarJson} texto={'Save'} />
     </div>
 
   );
