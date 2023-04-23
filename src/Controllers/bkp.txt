@@ -1,0 +1,145 @@
+export function montarJson() {
+    setTimeout(() => {
+
+        const identificacaoModelo = document.querySelector('.identificacao .modelo').childNodes;
+        const identificacaoSerial = document.querySelector('.identificacao .serial').childNodes;
+
+        const identificacaoSecao = document.querySelectorAll('.secao');
+        const identificacaoTopicos = document.querySelectorAll('.tabela tbody tr td');
+        const arrayTopicos = Array.from(identificacaoTopicos);
+        //const arraySerial = identificacaoSerial.getAttributeNode('text')/
+
+        var modelo = {};
+        var numSerie = {};
+        var bdSecao = {};
+        var topicos = {};
+
+        var pontosChecagem = [];
+        var bdTopicos = [];
+
+        var montaPontos = {};
+
+
+        //console.log('node', identificacaoTopicos);
+        Modelo();
+        Serial();
+        Secao();
+
+        //console.log('node',identificacaoSerial.childNodes[0].selected)
+        //console.log(modelo, numSerie, bdSecao, topicos);
+
+
+        function Modelo() {
+
+            identificacaoModelo.forEach(mod => {
+
+                if (mod.selected === true) {
+                    modelo.id = Number(mod.id);
+                    modelo.nome = mod.text;
+                }
+            })
+
+            return modelo;
+        }
+
+        function Serial() {
+
+            identificacaoSerial.forEach(serie => {
+
+                if (serie.selected === true) {
+                    numSerie.id = Number(serie.id);
+                    numSerie.sn = serie.text;
+                    numSerie.free = false;
+
+                }
+            })
+
+            return numSerie;
+        }
+
+        function Secao() {
+            //console.log(`doc`, identificacaoSecao)
+            identificacaoSecao.forEach(sec => {
+                bdSecao = {};
+                bdTopicos = {};
+                montaPontos = {};
+
+                let arraySec = sec.id.split(",");
+
+                bdSecao.id = Number(arraySec[0]);
+                bdSecao.titulo = arraySec[1];
+
+                const newTopicos = arrayTopicos.filter(filtro => Number(filtro.id) === bdSecao.id);
+                //console.log('new', newTopicos)
+
+                //console.log('postos', pontosChecagem);
+
+                Topicos(newTopicos);
+                
+                montaPontos = {
+                    bdSecao: bdSecao,
+                    bdTopicos: bdTopicos, };
+
+                pontosChecagem.push(montaPontos);
+
+                console.log('pontos', pontosChecagem);
+            })
+
+            return bdSecao;
+        }
+
+        function Topicos(newTopicos) {
+
+            let cont = 0;
+            let step = 4;
+            let temp = [];
+
+            for (let i = 0; i < newTopicos.length; i = i + step) {
+                let id = null;
+                let chk = null;
+                let item = null;
+                let obs = null;
+
+                //  if (start === cont) {
+                for (let u = 0; u < 4; u++) {
+                    let index = u + cont;
+                    id = Number(newTopicos[i].parentNode.id);
+
+                    if (index === cont) {
+                        let checkar = newTopicos[index].childNodes[0].checked;
+
+                        if (checkar === true) {
+                            chk = true;
+                        } else {
+                            chk = false;
+                        }
+                    }
+
+                    if (index === cont + 1) { item = newTopicos[index].textContent };
+
+
+                    if (index === cont + 3) { obs = newTopicos[index].childNodes[0].value };
+
+                    topicos = {
+                        id: id,
+                        chk: chk,
+                        item: item,
+                        obs: obs
+
+                    }
+                };
+
+                temp.push(topicos);
+                //console.log('topicos', topicos)
+                bdTopicos = [].concat(temp);
+                cont = cont + step;
+
+                //console.log('bdTopicos', bdTopicos);
+
+            };
+
+            return bdTopicos;
+        }
+
+    }, 1000);
+}

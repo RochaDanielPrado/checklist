@@ -8,12 +8,29 @@
     margin: 0 10px 0 10px ;
 }
 
-.identificacao .idpart {
-    display: inline-flex;
+.identificacao label{
+    display: block;
+    margin-bottom: 8px;
     max-width: 80%;
-    font-size: 12px;
+    font-size: 18px;
 }
 
-.idpart p {
-    margin: 4px;
+.identificacao select {
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border: 1px #A74F2B solid;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.identificacao input {
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border: 1px #A74F2B solid;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
 }

@@ -56,9 +56,19 @@
 
 .responsavel {
     display: flex;
-    justify-content:start;
+    justify-content:space-around;
     margin: 0 10px 0 10px ;
     padding: 2px 0 2px 10px ;
+}
+.responsavel .stl {
+    display: inline-block;
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border: 1px #A74F2B solid;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .tabela .inputobs {

@@ -1,20 +1,35 @@
 import './Identificacao.css';
 
-const Identificacao = () => {
+const Identificacao = ({modelo, sn}) => {
+
+    let defaultValor = '';
+
     return (
         <div className='identificacao'>
-            <div className='idpart'>
-                <p>Modelo:</p>
-                <p>FCG-030</p>
+            <div>
+                <label>Modelo:</label>
+                <select className='modelo' defaultValue={'DEFAULT'}>
+                    {modelo.map((item, index) => {
+                        index === 0 ? defaultValor = 'DEFAULT' : defaultValor = index;
+                        return <option id={item.id} value={defaultValor} key={index}>{item.nome}</option>
+                    })}
+                </select>
+                
             </div>
-            <div className='idpart'>
-                <p>Serial</p>
-                <p>_________</p>
+            <div>
+                <label>Serial</label>
+                <select className='serial' defaultValue={'DEFAULT'}>
+                    {sn.map((serial, index) => {
+                        index === 0 ? defaultValor = 'DEFAULT' : defaultValor = index;
+
+                        return <option id={serial.id} value={defaultValor} key={index} >{serial.sn}</option>
+                    })}
+                </select>
             </div>
-            <div className='idpart'>
-                <p>Data Final</p>
-                <p>___/___/_____</p>
-            </div>
+            {/* <div className='idpart'>
+                <label>Data Final</label>
+                <input type='date'></input>
+            </div> */}
         </div>
     );
 }
