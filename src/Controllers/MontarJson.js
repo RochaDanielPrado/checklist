@@ -3,9 +3,10 @@ import { fserial } from "./CriaNSerieJson.js";
 import { fsecao } from "./CriaSecaoJson.js";
 
 export function montarJson() {
+    var pontosChecagem = [];
+    
     setTimeout(() => {
 
-        let pontosChecagem = [];
 
         const modelo = fmodelo();
         pontosChecagem.push({ bdModelo: modelo });
@@ -21,5 +22,9 @@ export function montarJson() {
         console.log(modelo, numSerie, pontosChecagem);
 
 
+
     }, 1000);
+
+    return pontosChecagem;
+
 }
