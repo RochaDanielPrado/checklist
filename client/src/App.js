@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import Cabecalho from './Componentes/Cabecalho';
-import Checklist from './Pages/Checklist';
+import Cabecalho from './componentes/cabecalho';
+import Checklist from './pages/checklist';
 
 
 function App() {

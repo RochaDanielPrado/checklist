@@ -1,11 +1,11 @@
 
 import React from 'react';
-import Botao from '../../Componentes/Botao';
-import Identificacao from '../../Componentes/Identificacao';
-import Titulo from '../../Componentes/Titulo';
+import Botao from '../../componentes/botao';
+import Identificacao from '../../componentes/identificacao';
+import Titulo from '../../componentes/titulo';
 import './Checklist.css';
-import Secao from '../../Componentes/Secao';
-import { montarJson } from '../../Controllers/MontarJson';
+import Secao from '../../componentes/secao';
+import { montarJson } from '../../controllers/MontarJson';
 
 function Checklist() {
 
