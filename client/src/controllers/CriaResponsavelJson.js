@@ -1,4 +1,4 @@
-export function fresponsavel(idSec) {
+export function fresponsavel(idSec, bdresp) {
 
     const domResponsavel = document.querySelectorAll('.responsavel .dados');
     const arrayResponsavel = Array.from(domResponsavel);
@@ -6,7 +6,7 @@ export function fresponsavel(idSec) {
     const newResponsavel = arrayResponsavel.filter(filtro => Number(filtro.id) === idSec);
     //console.log('new', newResponsavel)
 
-    let bdResponsavel = [];
+    let bdResponsavel = bdresp;
     let responsavel = {};
 
 
@@ -70,7 +70,7 @@ export function fresponsavel(idSec) {
     }
 
     bdResponsavel = bdResponsavel.concat(aux_temp);
-    //console.log('resp', bdResponsavel)
+    console.log('resp', bdResponsavel)
     return bdResponsavel;
 
 }

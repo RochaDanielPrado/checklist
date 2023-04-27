@@ -1,35 +1,24 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './componentes/header/Header.css';
 
-import Cabecalho from './componentes/cabecalho';
+import Header from './componentes/header';
+import Home from './pages/home';
 import Checklist from './pages/checklist';
-
+import Footer from './componentes/footer';
 
 function App() {
 
   return (
-
     <div className="App">
-      <Cabecalho />
       <Router>
+        <Header />
 
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/checklist">Checklist</Link>
-              </li>
-            </ul>
-          </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/checklist" element={<Checklist />} />
+        </Routes>
 
-          <Routes>
-            <Route path="/checklist" element={<Checklist />} />
-            <Route path="/" element={'Home'} />
-          </Routes>
-        </div>
-
+        <Footer />
       </Router>
     </div>
 

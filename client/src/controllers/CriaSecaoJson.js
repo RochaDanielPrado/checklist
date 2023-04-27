@@ -30,7 +30,7 @@ export function fsecao() {
 
                 const bdTopicos = ftopico(bdSecao.id);
                 
-                bdResponsavel = fresponsavel(bdSecao.id);
+                bdResponsavel = fresponsavel(bdSecao.id, bdResponsavel);
 
                 montaPontos = {
                     bdSecao: bdSecao,
