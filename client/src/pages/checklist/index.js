@@ -38,8 +38,8 @@ function Checklist() {
                 cor03: "#F5F291"
             },
             bdTopicos: [
-                { id: 1, chk: true, item: "Parafusos (apertos, danos, falta de arruelas, etc)", obs: "observacao" },
-                { id: 2, chk: true, item: "Paineis (danos, riscos, película, etc)", obs: "observacao" },
+                { id: 1, chk: false, item: "Parafusos (apertos, danos, falta de arruelas, etc)", obs: "" },
+                { id: 2, chk: false, item: "Paineis (danos, riscos, película, etc)", obs: "" },
             ]
         },
         {
@@ -50,16 +50,16 @@ function Checklist() {
                 cor03: "#8ED4A4"
             },
             bdTopicos: [
-                { id: 1, chk: true, item: "Mangueiras (amassados, torções, etc)", obs: "observacao" },
-                { id: 2, chk: false, item: "Abraçadeiras (apertos, tamanhos adequados)", obs: "observacao" },
-                { id: 3, chk: true, item: "Conexões (vazamentos, engates, danos, aspecto, etc)", obs: "observacao" },
-                { id: 4, chk: true, item: "Veda Rosca e apertos em conexões e Venturi", obs: "observacao" },
-                { id: 5, chk: true, item: "Caixas: (vedação, limpeza, flange, chegada de mangueiras)", obs: "observacao" },
-                { id: 6, chk: true, item: "Vernis na célula", obs: "observacao" },
-                { id: 7, chk: true, item: "Veda Calha para finalização", obs: "observacao" },
-                { id: 8, chk: true, item: "Conferencia da orientação das saídas (ÁCIDO E ALCALINO)", obs: "observacao" },
-                { id: 9, chk: true, item: "Vasamentos (tanques, mangueiras, conexões)", obs: "observacao" },
-                { id: 10, chk: true, item: "Limpeza interna dos tanques", obs: "observacao" },
+                { id: 1, chk: false, item: "Mangueiras (amassados, torções, etc)", obs: "" },
+                { id: 2, chk: false, item: "Abraçadeiras (apertos, tamanhos adequados)", obs: "" },
+                { id: 3, chk: false, item: "Conexões (vazamentos, engates, danos, aspecto, etc)", obs: "" },
+                { id: 4, chk: false, item: "Veda Rosca e apertos em conexões e Venturi", obs: "" },
+                { id: 5, chk: false, item: "Caixas: (vedação, limpeza, flange, chegada de mangueiras)", obs: "" },
+                { id: 6, chk: false, item: "Vernis na célula", obs: "" },
+                { id: 7, chk: false, item: "Veda Calha para finalização", obs: "" },
+                { id: 8, chk: false, item: "Conferencia da orientação das saídas (ÁCIDO E ALCALINO)", obs: "" },
+                { id: 9, chk: false, item: "Vasamentos (tanques, mangueiras, conexões)", obs: "" },
+                { id: 10, chk: false, item: "Limpeza interna dos tanques", obs: "" },
             ]
         },
         {
@@ -70,12 +70,12 @@ function Checklist() {
                 cor03: "#9891F9"
             },
             bdTopicos: [
-                { id: 1, chk: true, item: "Cabos e Pinos (verificar se não existem pinos soltos ou desconectados)", obs: "observacao" },
-                { id: 2, chk: true, item: "Fixação de fonte, disjuntor e placa", obs: "observacao" },
-                { id: 3, chk: true, item: "Inspeção visual (potencial riscos elétricos)", obs: "observacao" },
-                { id: 4, chk: true, item: "Atuação de sensores (boias)", obs: "observacao" },
-                { id: 5, chk: true, item: "Atuação das chaves e Lampadas", obs: "observacao" },
-                { id: 6, chk: true, item: "Apertos nas chaves e lampadas", obs: "observacao" },
+                { id: 1, chk: false, item: "Cabos e Pinos (verificar se não existem pinos soltos ou desconectados)", obs: "" },
+                { id: 2, chk: false, item: "Fixação de fonte, disjuntor e placa", obs: "" },
+                { id: 3, chk: false, item: "Inspeção visual (potencial riscos elétricos)", obs: "" },
+                { id: 4, chk: false, item: "Atuação de sensores (boias)", obs: "" },
+                { id: 5, chk: false, item: "Atuação das chaves e Lampadas", obs: "" },
+                { id: 6, chk: false, item: "Apertos nas chaves e lampadas", obs: "" },
             ]
         },
         {
@@ -86,17 +86,17 @@ function Checklist() {
                 cor03: "#6FAFEE"
             },
             bdTopicos: [
-                { id: 1, chk: true, item: "CÉLULA: TENSÃO", obs: "observacao" },
-                { id: 2, chk: true, item: "CÉLULA: CORRENTE", obs: "observacao" },
-                { id: 3, chk: true, item: "PH ALCALINO  [fita ou medidor de PH]", obs: "observacao" },
-                { id: 4, chk: true, item: "PH ÁCIDO  [fita ou medidor de PH]", obs: "observacao" },
-                { id: 5, chk: true, item: "Tempo de burn-in (h)", obs: "observacao" },
-                { id: 6, chk: true, item: "Novo teste de sensores e chaves", obs: "observacao" },
-                { id: 7, chk: true, item: "Lavagem Interna", obs: "observacao" },
-                { id: 8, chk: true, item: "Drenagem dos tanques e fechamento de tampas", obs: "observacao" },
-                { id: 9, chk: true, item: "Inspeção visual final e colagem do No de SERIE", obs: "observacao" },
-                { id: 10, chk: true, item: "Fechamento (tampas, paineis, suporte mangueira)", obs: "observacao" },
-                { id: 11, chk: true, item: "Itens Acessórios (engates de mangueira, etc)", obs: "observacao" },
+                { id: 1, chk: false, item: "CÉLULA: TENSÃO", obs: "" },
+                { id: 2, chk: false, item: "CÉLULA: CORRENTE", obs: "" },
+                { id: 3, chk: false, item: "PH ALCALINO  [fita ou medidor de PH]", obs: "" },
+                { id: 4, chk: false, item: "PH ÁCIDO  [fita ou medidor de PH]", obs: "" },
+                { id: 5, chk: false, item: "Tempo de burn-in (h)", obs: "" },
+                { id: 6, chk: false, item: "Novo teste de sensores e chaves", obs: "" },
+                { id: 7, chk: false, item: "Lavagem Interna", obs: "" },
+                { id: 8, chk: false, item: "Drenagem dos tanques e fechamento de tampas", obs: "" },
+                { id: 9, chk: false, item: "Inspeção visual final e colagem do No de SERIE", obs: "" },
+                { id: 10, chk: false, item: "Fechamento (tampas, paineis, suporte mangueira)", obs: "" },
+                { id: 11, chk: false, item: "Itens Acessórios (engates de mangueira, etc)", obs: "" },
             ]
         },
     ]
