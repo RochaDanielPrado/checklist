@@ -10,7 +10,7 @@ const Identificacao = ({ modelo, sn }) => {
         const initialModelo = modelo[0].nome;
         bdModelo = {
             id: modelo[0].id,
-            sn: modelo[0].nome,
+            nome: modelo[0].nome,
         }
         console.log('modelo', bdModelo);
         storage('bdModelo', bdModelo);

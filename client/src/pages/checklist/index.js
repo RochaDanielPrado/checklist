@@ -118,6 +118,7 @@ function Checklist() {
           topicos={ponto.bdTopicos}
           responsavel={responsavel.filter(resp => resp.ativo === true)} />)}
       <Botao click={montarJson} texto={'Save'} />
+      <Botao click={montarJson} texto={'Grava'} />
         </div>
 
 

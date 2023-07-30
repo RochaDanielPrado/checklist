@@ -1,6 +1,20 @@
 const db = require('../config/db');
 
 module.exports = {
+    
+    checklist: () => {
+        return new Promise((aceito, rejeitado)=>{
+            
+        const q = 'SELECT * FROM carros';
+
+            db.query(q, (error, data)=>{
+                if(error) { rejeitado(error); return; }
+              
+                aceito(data);
+            });
+        });
+    },
+
     buscarTodos: () => {
         return new Promise((aceito, rejeitado)=>{
             
@@ -27,11 +41,11 @@ module.exports = {
             });
         });
     },
-    inserir: (modelo, placa)=> {
+    inserir: (nome, teste) => {
         return new Promise((aceito, rejeitado)=> {
 
-            db.query('INSERT INTO carros (modelo, placa) VALUES (?, ?)',
-                [modelo, placa],
+            db.query('INSERT INTO modelo (nome) VALUES (?)',
+                [nome],
                 (error, data)=>{
                     if(error){ rejeitado(error); return; }
                     aceito(data.insertCodigo); //insertId
